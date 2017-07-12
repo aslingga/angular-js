@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="controller.js"></script>
+
+<title>Angular JS</title>
+</head>
+<body>
+<div data-ng-app="app">
+	<div data-ng-controller="ctrl1">
+		<p>Name : <input type="text" data-ng-model="name"></p>
+		<h1>Hello {{name}}</h1>
+		<h2>Hello <span data-ng-bind="name"></span></h2>
+	</div>
+	
+	<div data-ng-controller="ctrl2">
+		First Name: <input type="text" data-ng-model="firstName"><br>
+		Last Name: <input type="text" data-ng-model="lastName"><br>
+		<br>
+		Full Name: {{firstName + " " + lastName}}
+	</div>
+</div>
+</body>
+</html>
