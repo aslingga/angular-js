@@ -1,0 +1,28 @@
+[
+    {
+        "id": "2",
+        "email": "angga.sanjaya@lkpp.go.id",
+        "application": "RINJANI",
+        "user": "Alex Putra Setiadi",
+        "message": "Testing again from Postman",
+        "sender": "Angga S Lingga",
+        "targetId": "1",
+        "targetUrl": "http://batur.dev",
+        "isRead": false,
+        "statusCode": "20007013",
+        "statusDesc": "Notification is unread"
+    },
+    {
+        "id": "1",
+        "email": "angga.sanjaya@lkpp.go.id",
+        "application": "RINJANI",
+        "user": "Alex Putra Setiadi",
+        "message": "Testing again from Postman",
+        "sender": "Angga S Lingga",
+        "targetId": "1",
+        "targetUrl": "http://batur.dev",
+        "isRead": false,
+        "statusCode": "20007013",
+        "statusDesc": "Notification is unread"
+    }
+]

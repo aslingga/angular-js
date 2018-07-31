@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Angular Test</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+<script src="employee.js"></script>
+</head>
+<body ng-app>
+    <table ng-controller="Hello">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="user in users">
+            <td>{{user.userid}}</td>
+            <td>{{user.email}}</td>
+        </tr>
+    </tbody>
+    </table>
+    
+    <table ng-controller="Hellow">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="user in users">
+            <td>{{user.code}}</td>
+            <td>{{user.email}}</td>
+        </tr>
+    </tbody>
+    </table>
+</body>
+</html>
