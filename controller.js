@@ -58,7 +58,31 @@ app.controller("ctrl4", function($scope) {
 });
 
 app.controller("ctrl5", function($scope, $http) {
+	var url = "http://localhost/batur/web/v2/employee/profile/angga.sanjaya@lkpp.go.id";
+	
 	$http.get(url).then(function(response) {
-		$scope.email = response.data;
-	});
+		$scope.employeeNumber = response.data.data.employeeNumber;
+	}, function errorCallback(response) {
+	    console.log(response);
+	})
+	.catch(function activateError(error) {
+        if (!error.handled) {
+            alert("An error happened!");
+        }
+    });
+});
+
+app.controller("ctrl6", function($scope, $http) {
+	var url = "http://localhost/batur/web/v2/notification/list?email=angga.sanjaya@lkpp.go.id";
+	
+	$http.get(url).then(function(response) {
+		$scope.notifications = response.data.data;
+	}, function errorCallback(response) {
+	    console.log(response);
+	})
+	.catch(function activateError(error) {
+        if (!error.handled) {
+            alert("An error happened!");
+        }
+    });
 });

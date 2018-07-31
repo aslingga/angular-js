@@ -70,9 +70,14 @@
 	<h1>{{color}}</h1>
 
 	<hr>
-
-	<div ng-contreoller="ctrl5">
-		<p>Email: {{ email }}</p>
+	
+	<div ng-controller="ctrl5">
+		<p>Employee Number: {{employeeNumber}}</p>
 	</div>
+	
+	<h1>Notifications</h1>
+	<ol ng-controller="ctrl6">
+		<li ng-repeat="notification in notifications">{{notification.message}} [{{notification.appName}}] oleh {{notification.sender}} <small>{{notification.createdDate}}</small> {{notification.code}}</li>
+	</ol>
 </body>
 </html>
